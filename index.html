@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria Arte em Papel</title>
+    <link rel="icon" href="IMG_2688.png" type="image/png">
+    <style>
+        :root {
+            --azul-claro: #63c2f3;
+            --azul-escuro: #152544;
+            --azul-medio: #265e9b;
+            --vermelho: #e52d27;
+            --laranja: #f36b1c;
+            --amarelo: #f7c325;
+            --verde: #42b05c;
+            --roxo: #7a3dbf;
+            --fundo: #f4f4f4;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo);
+            color: var(--azul-escuro);
+        }
+
+        header {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 50px;
+        }
+
+        .logo-container h1 {
+            font-size: 1.8rem;
+            color: var(--branco);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-claro);
+        }
+
+        main {
+            padding: 40px 30px;
+            text-align: center;
+            background-color: var(--branco);
+        }
+
+        .destaque h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--azul-medio);
+        }
+
+        .destaque p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        /* Seção do banner grande */
+        .banner {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+                margin-top: 15px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="21.png" alt="Logo Papelaria">
+            <h1>Papelaria Arte em Papel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="inform.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <h2>Bem-vindo à nossa papelaria!</h2>
+            <p>Os melhores produtos para o seu dia a dia escolar e profissional.</p>
+        </section>
+
+        <!-- Imagem grande/banner -->
+        <section class="banner">
+            <img src="banner.png" alt="Banner da Papelaria Arte em Papel">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Papelaria Arte em Papel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

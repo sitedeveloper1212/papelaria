@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Papelaria Arte em Papel</title>
+    <link rel="icon" href="IMG_2688.PNG" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --azul-claro: #63c2f3;
+            --azul-escuro: #152544;
+            --azul-medio: #265e9b;
+            --fundo: #f9f9f9;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo);
+            color: var(--azul-escuro);
+        }
+
+        header {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 50px;
+        }
+
+        .logo-container h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-claro);
+        }
+
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--azul-medio);
+            margin-bottom: 30px;
+        }
+
+        .botoes-contato {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .botao {
+            background-color: var(--azul-medio);
+            color: var(--branco);
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .botao i {
+            font-size: 1.3rem;
+        }
+
+        .botao:hover {
+            background-color: var(--azul-claro);
+        }
+
+        footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .botoes-contato {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="21.png" alt="Logo Papelaria">
+            <h1>Papelaria Arte em Papel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="inform.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Entre em Contato Conosco</h2>
+        <div class="botoes-contato">
+            <a href="https://www.instagram.com/papelariaarteempapel.d/" target="_blank" class="botao">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/5581973217870" target="_blank" class="botao">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:designpapelpapelaria@gmail.com" class="botao">
+                <i class="fas fa-envelope"></i> E-mail
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Papelaria Arte em Papel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
